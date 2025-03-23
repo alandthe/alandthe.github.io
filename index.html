@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WAGMICAT - The Meme Coin 🐱</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Variables for Theme */
+        :root {
+            --primary-bg: #1e1e2f;
+            --secondary-bg: #2a2a3f;
+            --accent-color: #bb86fc;
+            --header-bg: #6a1b9a;
+            --text-color: #ffffff;
+            --button-hover: #9c4dcc;
+        }
+
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--primary-bg);
+            color: var(--text-color);
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--header-bg);
+            padding: 40px 0;
+        }
+
+        header img {
+            width: 150px;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin: 10px 0 0;
+            color: var(--accent-color);
+        }
+
+        /* Sections */
+        section {
+            padding: 40px 0;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--accent-color);
+        }
+
+        section p {
+            font-size: 1.1rem;
+        }
+
+        /* Contract Section */
+        .contract {
+            background-color: var(--secondary-bg);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 600px;
+        }
+
+        .contract p {
+            font-size: 1.2rem;
+            word-break: break-all;
+            margin-bottom: 20px;
+        }
+
+        .contract button {
+            background-color: var(--accent-color);
+            color: var(--primary-bg);
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .contract button:hover {
+            background-color: var(--button-hover);
+        }
+
+        /* Dex Section */
+        .dex {
+            background-color: var(--secondary-bg);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 600px;
+        }
+
+        .dex a {
+            background-color: var(--accent-color);
+            color: var(--primary-bg);
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .dex a:hover {
+            background-color: var(--button-hover);
+        }
+
+        /* Community Section */
+        .community {
+            margin-top: 40px;
+        }
+
+        .community a {
+            background-color: var(--accent-color);
+            color: var(--primary-bg);
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .community a:hover {
+            background-color: var(--button-hover);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--header-bg);
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            section h2 {
+                font-size: 1.8rem;
+            }
+
+            section p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="https://i.postimg.cc/Ss652dV5/5434.jpg" alt="WAGMICAT Logo">
+            <h1>WAGMICAT 🐱</h1>
+            <p>The Purr-fect Meme Coin for the Future 🚀</p>
+        </div>
+    </header>
+
+    <section class="about">
+        <div class="container">
+            <h2>About WAGMICAT 🐾</h2>
+            <p>WAGMICAT is the next big meme coin on the <strong>Sonic Network</strong>. We're all about community, fun, and making it big together. WAGMI! 💪</p>
+        </div>
+    </section>
+
+    <section class="contract">
+        <div class="container">
+            <h2>Contract Address 📄</h2>
+            <p>0xdd175a3998d81c3ef51abb9c1eab2d7a8c795f68</p>
+            <button onclick="copyContract()" aria-label="Copy Contract Address">Copy Address 📋</button>
+        </div>
+    </section>
+
+    <section class="dex">
+        <div class="container">
+            <h2>Trade WAGMICAT on WAGMI Dex 🚀</h2>
+            <p>Buy and trade WAGMICAT on WAGMI Dex and join the meme revolution!</p>
+            <a href="https://app.wagmi.com/trade/swap" target="_blank" rel="noopener noreferrer">Trade Now 💰</a>
+        </div>
+    </section>
+
+    <section class="community">
+        <div class="container">
+            <h2>Join Our Community 🐱</h2>
+            <p>Stay updated and join the conversation on Telegram:</p>
+            <a href="https://t.me/WAGMICATOfficial" target="_blank" rel="noopener noreferrer">Join Telegram 💬</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 WAGMICAT. All rights reserved. 🐾</p>
+        </div>
+    </footer>
+
+    <script>
+        function copyContract() {
+            const contractAddress = "0xdd175a3998d81c3ef51abb9c1eab2d7a8c795f68";
+            navigator.clipboard.writeText(contractAddress)
+                .then(() => {
+                    alert("Contract address copied to clipboard! 📋");
+                })
+                .catch(() => {
+                    alert("Failed to copy contract address. Please copy it manually.");
+                });
+        }
+    </script>
+</body>
+</html>
